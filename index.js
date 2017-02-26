@@ -8,6 +8,7 @@ var canvas = new CanvasLayer({
 var hnn = new HNN(16)
 
 hnn.learn([1,1,-1,-1,1,1,-1,-1,1,1,1,1,-1,-1,-1,-1])
+hnn.learn([1,1,-1,-1,1,1,-1,-1,-1,-1,-1,-1,1,1,1,1])
 hnn.recall([-1,1,-1,-1,1,1,1,-1,1,1,-1,-1,-1,-1,1,1], function(pattern,i){
   console.log(i)
   console.log(pattern)
